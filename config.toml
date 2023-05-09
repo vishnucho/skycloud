@@ -1,4 +1,4 @@
-baseURL = 'https://www.forevergame.org/skycloud'
+baseURL = 'https://vishnucho.github.io/skycloud'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'ananke'
