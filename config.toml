@@ -10,7 +10,7 @@ metaDataFormat         = "yaml"
 publishDir             = "public"
 title                  = "Skycloud Tech Share Space"
 theme                  = "shadocs"
-themesdir              = "./themes"
+themesdir              = "/github.com/vishnucho/skycloud/theme"
 
 [Author]
   name = "Skycloud Team"
