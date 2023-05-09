@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miscellaneous on Shadocs theme documentation</title>
+    <link>https://vishnucho.github.io/skycloud/categories/miscellaneous/</link>
+    <description>Recent content in Miscellaneous on Shadocs theme documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>The MIT License (MIT) Copyright © 2023 Skycloud</copyright><atom:link href="https://vishnucho.github.io/skycloud/categories/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sitemap</title>
+      <link>https://vishnucho.github.io/skycloud/sitemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vishnucho.github.io/skycloud/sitemap/</guid>
+      <description> Shadocs theme documentation Theme Introduction Configuration Extend the theme To infinity and beyond! Contribute The Markdown Title Horizontal rule Paragraph Line break Emphasis Blockquote List Code snippet Link Image Table Footnotes Emoji Escaping characters Comment Functionalities Sidebar Empty section Section Simple section page Disabled section Simple disabled section page Disabled pages Disabled simple page Empty simple page Sorted pages Simple page 1 Simple page 2 Simple page 3 Simple page Single page with icon Multilingual Taxonomies Table of contents Single page without table of contents Third-party imports Search Mermaid Shortcuts Javascript helpers functions Print 404 Page QR code Banner Global banner Single banner Versioning Shortcodes {{&amp;lt; alert &amp;gt;}} {{&amp;lt; asyncapi &amp;gt;}} {{&amp;lt; blockquote &amp;gt;}} {{&amp;lt; collapsible &amp;gt;}} {{&amp;lt; highcharts &amp;gt;}} {{&amp;lt; intro &amp;gt;}} {{&amp;lt; md &amp;gt;}} {{&amp;lt; openapi &amp;gt;}} {{&amp;lt; pagebreak &amp;gt;}} {{&amp;lt; parameter &amp;gt;}} {{&amp;lt; plaintext &amp;gt;}} {{&amp;lt; snippet &amp;gt;}} {{&amp;lt; treeview &amp;gt;}} Sitemap </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme on Shadocs theme documentation</title>
+    <link>https://vishnucho.github.io/skycloud/categories/theme/</link>
+    <description>Recent content in Theme on Shadocs theme documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>The MIT License (MIT) Copyright © 2023 Skycloud</copyright><atom:link href="https://vishnucho.github.io/skycloud/categories/theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation: Introduction</title>
+      <link>https://vishnucho.github.io/skycloud/theme/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vishnucho.github.io/skycloud/theme/introduction/</guid>
+      <description>Version management# Assets used in the theme# Asset Minimum version Hugo (Extended version) 0.91.0 Bulma 0.9.4 Several other assets are used in Shadocs. Versions can be found within the .bmycconfig.json file and assets are automatically updated using the Bmyc library. Installation# Hugo website creation# To create a Hugo website, the Hugo documentation provides a complete Quickstart which includes all the necessary steps to easily and quickly create a Hugo website.</description>
+    </item>
+    
+    <item>
+      <title>Theme</title>
+      <link>https://vishnucho.github.io/skycloud/theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vishnucho.github.io/skycloud/theme/</guid>
+      <description>Hugo, what is it?# Hugo is a framework (written in Go ) allowing to quickly and easily generate the static content of a website.
+Hugo&amp;rsquo;s main concept is to use the content of a site written in markdown to generate the associated html code.
+Hugo uses themes in order to create a coherent rendering. User can thus concentrate on the content&amp;rsquo;s writing and its structuring without managing its style.
+The Shadocs theme, what is it?</description>
+    </item>
+    
+    <item>
+      <title>Installation: Configuration</title>
+      <link>https://vishnucho.github.io/skycloud/theme/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vishnucho.github.io/skycloud/theme/configuration/</guid>
+      <description>General considerations# To configure a Hugo website using the theme, there are three types of configuration:
+Type Configuration file Standard Hugo configuration ./config.toml Specific configuration using site variables ./config.toml Default theme configuration .themes/shadocs/data/themeParams.toml Specific configuration# config.toml ([params] section)[params] # Website logo file paths logo = &amp;#34;images/logo.png&amp;#34; logoTouch = &amp;#34;images/logoTouch.png&amp;#34; # Image file path displayed during a 404 error image404 = &amp;#34;images/404.gif&amp;#34; # Favicon website file path favicon = &amp;#34;images/favicon.png&amp;#34; # Default layout used for the homepage homeLayout = &amp;#34;onboarding&amp;#34; # Site content order (https://gohugo.</description>
+    </item>
+    
+    <item>
+      <title>Installation: Extend the theme</title>
+      <link>https://vishnucho.github.io/skycloud/theme/extend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vishnucho.github.io/skycloud/theme/extend/</guid>
+      <description>General considerations# As every other Hugo theme, Shadocs theme can be extended and modified for specific purposes.
+For more information, check Hugo template documentation HTML customization# Several custom HTML layout files are available in the theme.
+These files are empty by default, but they can be defined within a specific website (using the Hugo&amp;rsquo;s Lookup Order ), to include specific code at a specific place, directly within the global HTML layout, without having to modify the default theme layout.</description>
+    </item>
+    
+    <item>
+      <title>To infinity and beyond!</title>
+      <link>https://vishnucho.github.io/skycloud/theme/beyond/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vishnucho.github.io/skycloud/theme/beyond/</guid>
+      <description>Go further# Upcoming features and improvements# Website content# Documentation enhancement New features ideas# Dark mode Shortcodes# Technical website improvements# Use of purgeCSS in PostCSS </description>
+    </item>
+    
+    <item>
+      <title>Contributing guide</title>
+      <link>https://vishnucho.github.io/skycloud/theme/contribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vishnucho.github.io/skycloud/theme/contribute/</guid>
+      <description>Find a bug?# If you find any bug within the theme, don&amp;rsquo;t hesitate to raise and report a new issue .
+Want to contribute?# If you want to contribute directly to the project, don&amp;rsquo;t hesitate do fork the project and raise a Pull Request to submit your modifications. All ideas are welcome and I&amp;rsquo;ll be glad to check them.
+Want to run the documentation website locally?# To run the current website locally, run the following command:</description>
+    </item>
+    
+    <item>
+      <title>Shadocs theme documentation</title>
+      <link>https://vishnucho.github.io/skycloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vishnucho.github.io/skycloud/</guid>
+      <description> Theme onboarding </description>
+    </item>
+    
+  </channel>
+</rss>
