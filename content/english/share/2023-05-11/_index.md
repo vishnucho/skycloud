@@ -49,8 +49,17 @@ Ipod 開發團隊並沒有向使用者教育，而是吸取使用者的感受量
 
 ### 三體問題
 
-![three-body](/imgs/three-body.gif)
-![three-body](/imgs/swinging-sticks.webp)
-![three-body](/imgs/123.png)
+![three-body](/shares/2023-05-11/imgs/three-body.gif)
 
 ### 混沌擺
+
+![three-body](/shares/2023-05-11/imgs/imgs/swinging-sticks.webp)
+
+### 雜湊函式
+
+| 輸入       | MD5 Hash                         | SHA-1 Hash                               |
+| ---------- | -------------------------------- | ---------------------------------------- |
+| vishnu_cho | a2b34e90492ce05ab5d6a0b8bebe3e1e | 0e2c42bbc36389a9de7e6b696c6f2b68ff55d416 |
+| vishnucho  | 0d79ed5a70748e4f1994a56339bb17ff | 90caae37cdaa5a72b4d65b7007105269467b4303 |
+| 123456789  | 25f9e794323b453885f5181f1b624d0b | f7c3bc1d808e04732adf679965ccc34ca7ae3441 |
+| 123456788  | f5f091a697cd91c4170cda38e81f4b1a | f5f091a697cd91c4170cda38e81f4b1a         |
