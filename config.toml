@@ -46,14 +46,14 @@ themesdir              = "themes"
 [Languages]
   [Languages.en]
     contentDir   = "content/english"
-    title        = "Shadocs theme documentation"
-    weight       = 1
+    title        = "Skycloud Tech Share Space"
+    weight       = 2
     languageName = "English"
 
   [Languages.fr]
     contentDir   = "content/french"
     title        = "Documentation du thème Shadocs"
-    weight       = 2
+    weight       = 3
     languageName = "Français"
 
 #
