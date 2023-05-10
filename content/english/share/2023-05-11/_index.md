@@ -47,4 +47,10 @@ Ipod 開發團隊並沒有向使用者教育，而是吸取使用者的感受量
 
 > 一個細微的初始值差異可以造成巨大的結果差異
 
-![](/imgs/three-body.gif)
+### 三體問題
+
+![three-body](/imgs/three-body.gif)
+![three-body](/imgs/swinging-sticks.webp)
+![three-body](/imgs/123.png)
+
+### 混沌擺
