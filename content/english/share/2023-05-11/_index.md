@@ -49,11 +49,11 @@ Ipod 開發團隊並沒有向使用者教育，而是吸取使用者的感受量
 
 ### 三體問題
 
-![three-body](./shares/2023-05-11/imgs/three-body.gif)
+![three-body](vishnucho.github.io/skycloud/share/2023-05-11/imgs/three-body.gif)
 
 ### 混沌擺
 
-![three-body](./shares/2023-05-11/imgs/swinging-sticks.webp)
+![three-body](vishnucho.github.io/skycloud/share/2023-05-11/imgs/swinging-sticks.webp)
 
 ### 雜湊函式
 
