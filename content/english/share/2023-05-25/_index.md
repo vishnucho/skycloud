@@ -17,9 +17,7 @@ tags: ['Tech']
 
       **NCSA Mosaic**是第一個流行的圖形化瀏覽器，由馬克·安德森（Marc Andreessen）等人開發。它支持圖形、圖像和超連結，並為互聯網的普及做出了重要貢獻。
 
-  ![](https://hackmd.io/_uploads/ryF5A9trh.png)
-
-![](https://hackmd.io/_uploads/H1eJjejSh.jpg)
+![](https://vishnucho.github.io/skycloud/share/2023-05-25/imgs/2.gif)
 
 - 1994 年
 
@@ -78,9 +76,9 @@ tags: ['Tech']
 
   **Edge**第一個版本於 2015 年 7 月 29 日正式推出。這個版本的**Edge**瀏覽器是為了配合 Windows 10 操作系統的推出而設計的，取代了先前的 Internet Explorer 作為 Windows 預設瀏覽器。
 
-![](https://hackmd.io/_uploads/Byn5ogsrn.jpg)
+![](https://vishnucho.github.io/skycloud/share/2023-05-25/imgs/1.gif)
 
-![](https://hackmd.io/_uploads/r10poloS3.jpg)
+![](https://vishnucho.github.io/skycloud/share/2023-05-25/imgs/3.gif)
 
 - 近年
 
