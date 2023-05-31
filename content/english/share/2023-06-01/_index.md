@@ -5,7 +5,7 @@ categories: ["Tech"]
 tags: ["Tech"]
 ---
 
-# 2023-05-17 提升UX體驗：探索註冊流程中的Sniper Link
+# 提升UX體驗：探索註冊流程中的Sniper Link
 
 ## 講者： Ariel
 
