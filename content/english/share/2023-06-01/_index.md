@@ -1,5 +1,5 @@
 ---
-title: "2023-06-01 隨機這件小事 - 魔鬼藏在細節裡"
+title: "2023-06-01 提升UX體驗：探索註冊流程中的Sniper Link"
 description: "談論UX體驗"
 categories: ["Tech"]
 tags: ["Tech"]
@@ -16,7 +16,9 @@ tags: ["Tech"]
 
 ## 什麼是Sniper Link ?
 Sniper Link 是一種特殊鏈接，可讓新用戶在註冊後更輕鬆地確認其電子郵件。
-![inbox](https://vishnucho.github.io/skycloud/share/2023-06-01/imgs/inbox.png)![inbox-with-sniper-link](https://vishnucho.github.io/skycloud/share/2023-06-01/imgs/inbox-with-sniper-link.png)
+![inbox](https://vishnucho.github.io/skycloud/share/2023-06-01/imgs/inbox.png)
+
+![inbox-with-sniper-link](https://vishnucho.github.io/skycloud/share/2023-06-01/imgs/inbox-with-sniper-link.png)
 
 ### Sniper Link結構
 ![sniper-link](https://vishnucho.github.io/skycloud/share/2023-06-01/imgs/sniper-link.png)
