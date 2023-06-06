@@ -7,6 +7,8 @@ tags: ['Tech']
 
 # 說文解字 - 反向代理伺服器
 
+## 講者： Jeff
+
 ## 伺服器
 
  一言以蔽之，接收請求（Request）並產生回應（Response）的機器，以現在我們常稱的伺服器大致上都是基於四層的 TCP / UDP 上的。
@@ -47,7 +49,7 @@ Host: jeff.com:443
 
 ```mermaid
 flowchart LR
-Source --> Proxy --> Destination
+  Source --> Proxy --> Destination
 ```
 
 所以代理伺服器也是一種伺服器
@@ -58,20 +60,20 @@ Source --> Proxy --> Destination
 
 ```mermaid
 flowchart LR
- subgraph Clinet
- Source -- Req --> proxy[Forward Proxy]
- end
- proxy == Req ==> Server
+  subgraph Clinet
+    Source -- Req --> proxy[Forward Proxy]
+  end
+  proxy == Req ==> Server
 ```
 
 ## 反向代理伺服器
 
 ```mermaid
 flowchart LR
-Client == Req ==> proxy[Reverse Proxy]
-subgraph Server
-proxy -- Req --> OS[Origin Servers]
-end
+ Client == Req ==> proxy[Reverse Proxy]
+ subgraph Server
+  proxy -- Req --> OS[Origin Servers]
+ end
 ```
 
 - Origin Servers (Upstream、Backend、源站):
