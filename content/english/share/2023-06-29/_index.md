@@ -35,6 +35,10 @@ MDFK.
 
 2 Factor Authentication (2FA) / one-time password (OTP)
 
+> 一個密碼驗證最主要弱點就是密碼是一個共享的秘密。
+>
+> 除非你是有使用 2FA 的 28% 使用者之一
+>
 > 在現代的密碼機制下，2FA 幾乎是必要的
 
 ## 資安是光譜
@@ -59,45 +63,60 @@ FIDO 的目標是提供更安全、更便利的身份驗證機制，取代傳統
 - 2019: W3C WebAuthn
 - 2020: Platform and browser support (WebAuthn)
 
-## WebAuthn API
+## Web Authentication API
 
-允許使用者使用不同的驗證器進行身份驗證
+Web Authentication API (WebAuthn) 是由 W3C 與 FIDO 撰寫的規格，並由 Google、Mozilla、Microsoft、Yubico 等公司參與。
+
+該 API 允許伺服器使用公開金鑰密碼學而不是密碼來註冊和驗證使用者。
+
+> SSH key: credential
 
 ## Client to Authenticator Protocol (CTAP)
 
 WebAuthn API 透過 CTAP 與驗證器溝通
 
-## Basic Register Flow
+## Registering
 
-1. Client: create a new credential
-  - Relying Party: ID (e.g. skycloud.com.tw)
-  - User: ID
-  - Authenticator: ID
-2. Client: send credential to authenticator
-  - WebAuthn API with CTAP
-3. Authenticator: create a new credential
-  - Phone: fingerprint
-4. Authenticator: return credential to client
-5. Client: send credential to server
-6. Server: store credential
+```mermaid
+sequenceDiagram
+    participant User as User
+    participant UserDevice as User Device (Authenticator)
+    participant Server as Server
 
-## Basic Authentication Flow
+    User->>UserDevice: 建立帳號
+    UserDevice->>UserDevice: 生成公私鑰對
+    UserDevice->>UserDevice: 儲存公私鑰對
+    UserDevice->>Server: 註冊請求（包含公鑰）
+    Server->>Server: 生成挑戰（隨機字符串）
+    Server->>UserDevice: 提供挑戰
+    UserDevice->>UserDevice: 簽署挑戰（使用私鑰）
+    UserDevice->>Server: 提交挑戰回應（簽名和公鑰）
+    Server->>Server: 驗證挑戰回應（簽名和公鑰）
+    Server->>Server: 儲存註冊資料（包含公鑰和用戶標識）
+    Server->>User: 註冊成功通知
+```
 
-1. Client: send credential to server
-2. Server: send challenge to client
-3. Client: send challenge to authenticator
-4. Authenticator: verify credential
-5. Authenticator: return assertion to client
-6. Client: send assertion to server
-7. Server: verify assertion
+## Authenticating
 
-## 全都是密碼
+```mermaid
+sequenceDiagram
+    participant User as User
+    participant UserDevice as User Device (Authenticator)
+    participant Server as Server
+
+    User->>UserDevice: 登入
+    UserDevice->>Server: 請求登入
+    Server->>Server: 生成挑戰（隨機字符串）
+    Server->>UserDevice: 提供登入挑戰
+    UserDevice->>UserDevice: 簽署登入挑戰（使用私鑰）
+    UserDevice->>Server: 提交登入挑戰回應（簽名）
+    Server->>Server: 驗證登入挑戰回應（使用公鑰）
+    Server->>User: 回傳登入結果
+```
 
 ## Passkeys
 
 **你不需要密碼，而是密碼需要你**
-
-> SSH key: credential
 
 1. 不再有字面上意義的密碼，使用者只需要證明自己
 2. 不可視的密碼儲存在那些能認證使用者的裝置中
