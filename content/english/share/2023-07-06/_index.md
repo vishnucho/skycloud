@@ -1,6 +1,6 @@
 ---
 title: "2023-07-06 白話區塊鏈 - Crypto Introduction"
-description: "Crypto Introduction""
+description: "Crypto Introduction"
 categories: ["Tech"]
 tags: ["Tech"]
 ---
