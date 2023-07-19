@@ -21,6 +21,10 @@ Each major Go release is supported until there are two newer major releases.
 
 #### Fixing Loop Variable Capture
 
+```sh
+GOEXPERIMENT=loopvar go run main.go
+```
+
 ```go
 func main() {
   myStuff := []string{"one", "two", "three"}
@@ -37,7 +41,7 @@ func main() {
 }
 ```
 
-Before Go 1.21
+Before Go 1.21 loopvar
 
 ```txt
 three three three
@@ -93,6 +97,8 @@ myMap (after): map[]
 
 #### New log/slog package
 
+Usage
+
 ```go
 logger := slog.New(slog.NewTextHandler(os.Stderr, nil))
 logger.Info("hello", "count", 3)
@@ -101,4 +107,78 @@ logger.Info("hello", "count", 3)
 logger = slog.New(slog.NewJSONHandler(os.Stdout, nil))
 logger.Info("hello", "count", 3)
 // {"time":"2022-11-08T15:28:26.000000000-05:00","level":"INFO","msg":"hello","count":3}
+```
+
+Level
+
+```go
+const (
+ LevelDebug Level = -4
+ LevelInfo  Level = 0
+ LevelWarn  Level = 4
+ LevelError Level = 8
+)
+```
+
+Arrt
+
+```go
+slog.LogAttr(
+  slog.ErrorLevel,
+  "failed to brabrabra",
+  slog.Int("status", 500),
+  slog.Any("err", err)
+)
+```
+
+## Go 1.20 important features
+
+> Russ Cox: Go 2.0 is dead, long live with Go 1.x.
+
+### Arena
+
+```sh
+GOEXPERIMENT=arenas go run main.go
+```
+
+```go
+mem := arena.NewArena()
+defer mem.Free()
+
+for i := 0; i < 10; i++ {
+  obj := arena.New[T](mem)
+}
+
+slice := arena.MakeSlice[string](mem, 0, 0)
+```
+
+> No Maps support
+
+### context.WithCancelCause
+
+```go
+ctx, cancel := context.WithCancelCause(context.Background())
+cancel(errors.New("something went wrong"))
+fmt.Println(ctx.Err()) // context.Canceled
+fmt.Println(context.Cause(ctx)) // something went wrong
+```
+
+### Wrapping multiple errors
+
+```go
+err1 := errors.New("first error")
+err2 := errors.New("second error")
+err3 := errors.New("third error")
+err := errors.Join(err1, err2, err3)
+fmt.Println(err)
+// first error
+// second error
+// third error
+if errors.Is(err, err1) {
+  fmt.Println("err1 is err")
+}
+
+if errors.Is(err, err2) {
+  fmt.Println("err2 is err")
+}
 ```
